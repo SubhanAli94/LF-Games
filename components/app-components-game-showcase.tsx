@@ -29,9 +29,9 @@ export default function GameShowcase() {
   useEffect(() => {
     const fetchGames = async () => {
       try {
-        const response = await fetch(`${process.env.PUBLIC_URL}/games.json`);
+        const response = await fetch('/games.json');
         if (!response.ok) {
-          throw new Error('Network response was not ok');
+          throw new Error(`Network response was not ok ${response.json}`);
         }
         const data: GamesData = await response.json();
         setGames(data.games); // Assuming your JSON has a structure like { "games": [...] }
