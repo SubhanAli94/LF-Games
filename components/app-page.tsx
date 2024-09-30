@@ -1,5 +1,8 @@
+import { AboutPopupComponent } from './about-popup'
 import GameShowcase from './app-components-game-showcase' // Adjusted to default import
 import Link from 'next/link'
+import { Linkedin } from 'lucide-react'
+import { Button } from './ui/button'
 
 export default async function PageComponent() {
   return (
@@ -7,12 +10,18 @@ export default async function PageComponent() {
       <header className="border-b">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <Link href="/" className="text-2xl font-bold">LFG</Link>
-          <nav>
+          <nav className="flex items-center space-x-4">
             <ul className="flex space-x-4">
               <li><Link href="/" className="hover:underline">Home</Link></li>
-              <li><Link href="#about" className="hover:underline">About</Link></li>
+              <li><AboutPopupComponent /></li>
               <li><Link href="#contact" className="hover:underline">Contact</Link></li>
             </ul>
+            <Link href="https://www.linkedin.com/company/lfgames/about/" target="_blank" rel="noopener noreferrer">
+              <Button variant="ghost" size="icon">
+                <Linkedin className="h-5 w-5" />
+                <span className="sr-only">LinkedIn</span>
+              </Button>
+            </Link>
           </nav>
         </div>
       </header>
