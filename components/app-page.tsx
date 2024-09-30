@@ -24,13 +24,7 @@ export default async function PageComponent() {
       <footer className="border-t">
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p>&copy; {new Date().getFullYear()} Your Name. All rights reserved.</p>
-            <nav className="mt-4 md:mt-0">
-              <ul className="flex space-x-4">
-                <li><Link href="#privacy" className="hover:underline">Privacy Policy</Link></li>
-                <li><Link href="#terms" className="hover:underline">Terms of Service</Link></li>
-              </ul>
-            </nav>
+            <p>&copy; {new Date().getFullYear()} 2D - Low Fidelity Games. All rights reserved.</p>
           </div>
         </div>
       </footer>
