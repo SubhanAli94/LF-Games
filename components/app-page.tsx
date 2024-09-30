@@ -1,9 +1,9 @@
 import { AboutPopupComponent } from './about-popup'
 import GameShowcase from './app-components-game-showcase' // Adjusted to default import
 import Link from 'next/link'
-import { Linkedin } from 'lucide-react'
+import { Linkedin, X } from 'lucide-react'
 import { Button } from './ui/button'
-
+import { FaXTwitter } from "react-icons/fa6";
 export default async function PageComponent() {
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground">
@@ -18,6 +18,13 @@ export default async function PageComponent() {
               <Button variant="ghost" size="icon">
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
+              </Button>
+            </Link>
+
+            <Link href="https://x.com/lfgdev" target="_blank" rel="noopener noreferrer">
+              <Button variant="ghost" size="icon">
+                <FaXTwitter className="h-5 w-5" /> {/* Using the new X icon */}
+                <span className="sr-only">X</span>
               </Button>
             </Link>
           </nav>
