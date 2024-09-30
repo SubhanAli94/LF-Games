@@ -1,7 +1,7 @@
 import { AboutPopupComponent } from './about-popup'
 import GameShowcase from './app-components-game-showcase' // Adjusted to default import
 import Link from 'next/link'
-import { Linkedin, X } from 'lucide-react'
+import { Linkedin } from 'lucide-react'
 import { Button } from './ui/button'
 import { FaXTwitter } from "react-icons/fa6";
 export default async function PageComponent() {
