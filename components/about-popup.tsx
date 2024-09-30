@@ -22,21 +22,20 @@ export function AboutPopupComponent() {
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
           <DialogTitle>About My Game Showcase</DialogTitle>
-          <DialogDescription>
-            Learn more about this website and its creator.
-          </DialogDescription>
         </DialogHeader>
         <div className="py-4">
           <p className="text-sm text-muted-foreground">
-            This website showcases a collection of 100 WebGL 2D games built using Unity 3D and published on Itch.io. It serves as a portfolio of my game development work and provides easy access to play these games.
+            Welcome to our portfolio showcasing a curated collection of 100 WebGL 2D games developed using Unity 3D and published on Itch.io. This platform serves as a comprehensive display of our game development expertise, providing seamless access for users to engage with and experience these games.
           </p>
           <p className="mt-2 text-sm text-muted-foreground">
-            Each game card displays a thumbnail and the game's name. Clicking on a card will take you directly to the game's page on Itch.io, where you can play and explore more.
+            Each game card features a visually appealing thumbnail alongside the title of the game. By clicking on a card, users will be directed to the respective game’s page on Itch.io, where they can play and delve deeper into the game’s features and offerings.
           </p>
           <p className="mt-2 text-sm text-muted-foreground">
-            Feel free to browse through the games, use the search function to find specific titles, and enjoy playing!
+            We encourage you to explore the collection, utilize the search functionality to discover specific titles, and immerse yourself in the gaming experience we have curated for you.
           </p>
         </div>
+
+
       </DialogContent>
     </Dialog>
   )

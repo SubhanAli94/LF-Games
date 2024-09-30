@@ -12,9 +12,7 @@ export default async function PageComponent() {
           <Link href="/" className="text-2xl font-bold">LFG</Link>
           <nav className="flex items-center space-x-4">
             <ul className="flex space-x-4">
-              <li><Link href="/" className="hover:underline">Home</Link></li>
               <li><AboutPopupComponent /></li>
-              <li><Link href="#contact" className="hover:underline">Contact</Link></li>
             </ul>
             <Link href="https://www.linkedin.com/company/lfgames/about/" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon">
