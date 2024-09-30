@@ -31,7 +31,9 @@ export default function GameShowcase() {
       try {
         const response = await fetch('./games.json');
         if (!response.ok) {
-          throw new Error(`Network response was not ok ${response.json}`);
+          const errorResponse = await response.json(); // Try to parse the error response as JSON
+          throw new Error(`Network response was not ok: ${errorResponse.message || response.statusText}`);
+
         }
         const data: GamesData = await response.json();
         setGames(data.games); // Assuming your JSON has a structure like { "games": [...] }
