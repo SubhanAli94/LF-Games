@@ -32,6 +32,7 @@ export default async function PageComponent() {
       </header>
 
       <main className="flex-grow container mx-auto px-4 py-8">
+        <p className="text-2xl mx-auto w-full text-center pb-6 font-medium">A collection of 2D low-fidelity web games<br /><span className='italic font-normal text-base text-gray-700'> Best experience on desktop-based browsers</span></p>
         <GameShowcase />
       </main>
 
