@@ -5,12 +5,7 @@
 /* Import Space Grotesk font */
 /* Apply font globally */
 body {
-    font-family: sans-serif; /* Default font for body text */
-}
-
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Jacquarda Bastarda 9', serif, Times, serif;
+  font-family: 'fredoka', sans-serif;
 }
 
 @layer utilities {

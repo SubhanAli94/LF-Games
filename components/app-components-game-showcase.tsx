@@ -73,7 +73,7 @@ export default function GameShowcase() {
                   height={200}
                   className="w-full h-40 object-cover rounded-t-lg"
                 />
-                <h2 className="p-4 text-lg font-semibold text-center">{game.title}</h2>
+                <h2 className="p-4 text-lg text-center">{game.title}</h2>
               </CardContent>
             </Card>
           </Link>
