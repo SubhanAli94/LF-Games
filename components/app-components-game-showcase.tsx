@@ -64,16 +64,23 @@ export default function GameShowcase() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {filteredGames.map((game) => (
           <Link href={game.url} key={game.id} passHref>
-            <Card className="hover:shadow-lg transition-shadow duration-300">
-              <CardContent className="p-0">
+            <Card className="hover:shadow-lgtransition-shadow duration-300 rounded-b-lg overflow-hidden">
+              <CardContent className="p-0 bg-black">
                 <Image
                   src={game.thumbnail}
                   alt={`${game.title} thumbnail`}
                   width={300}
                   height={200}
-                  className="w-full h-40 object-cover rounded-t-lg"
+                  className="w-full h-40 object-contain rounded-t-lg"
                 />
-                <h2 className="p-4 text-lg text-center">{game.title}</h2>
+                {/* <h2 className="p-4 text-lg text-center">{game.title}</h2> */}
+
+                <div className="flex items-center justify-between p-4 text-lg text-center bg-white w-full">
+                  <span>{game.title}</span>
+                  <Link href={`https://github.com/${game.id}`} target="_blank">
+                    <Image src="/path/to/github-icon.svg" alt="GitHub" width={24} height={24} />
+                  </Link>
+                </div>
               </CardContent>
             </Card>
           </Link>
