@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { Input } from "@/components/ui/input"
 import { Card, CardContent } from "@/components/ui/card"
+import { Github } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -77,9 +78,11 @@ export default function GameShowcase() {
 
                 <div className="flex items-center justify-between p-4 text-lg text-center bg-white w-full">
                   <span>{game.title}</span>
-                  <Link href={`https://github.com/${game.id}`} target="_blank">
-                    <Image src="/path/to/github-icon.svg" alt="GitHub" width={24} height={24} />
-                  </Link>
+                  <div className="flex items-center justify-center w-8 h-8 border-2 border-gray-600 rounded-full hover:bg-gray-100 transition">
+                    <Link href="https://github.com">
+                      <Github className="w-4 h-4" />
+                    </Link>
+                  </div>
                 </div>
               </CardContent>
             </Card>
