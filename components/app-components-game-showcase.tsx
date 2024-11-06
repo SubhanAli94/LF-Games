@@ -11,7 +11,8 @@ interface Game {
   id: number
   title: string
   thumbnail: string
-  url: string
+  itchUrl: string
+  githubUrl: string
 }
 
 export interface GamesData {
@@ -64,7 +65,7 @@ export default function GameShowcase() {
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {filteredGames.map((game) => (
-          <Link href={game.url} key={game.id} passHref>
+          <Link href={game.itchUrl} key={game.id} passHref>
             <Card className="hover:shadow-lgtransition-shadow duration-300 rounded-b-lg overflow-hidden">
               <CardContent className="p-0 bg-black">
                 <Image
@@ -79,7 +80,7 @@ export default function GameShowcase() {
                 <div className="flex items-center justify-between p-4 text-lg text-center bg-white w-full">
                   <span>{game.title}</span>
                   <div className="flex items-center justify-center w-8 h-8 border-2 border-gray-600 rounded-full hover:bg-gray-100 transition">
-                    <Link href="https://github.com">
+                    <Link href={game.githubUrl}>
                       <Github className="w-4 h-4" />
                     </Link>
                   </div>
