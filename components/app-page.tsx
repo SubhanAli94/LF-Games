@@ -10,7 +10,7 @@ export default async function PageComponent() {
       <header className="border-b">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <Link href="/" className="text-2xl font-semibold">LFG</Link>
-          <nav className="flex items-center space-x-4">
+          <nav className="flex items-center space-x-4 invisible">
             <ul className="flex space-x-4">
               <li><AboutPopupComponent /></li>
             </ul>
