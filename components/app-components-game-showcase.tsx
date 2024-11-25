@@ -55,7 +55,7 @@ export default function GameShowcase() {
 
   return (
     <div className="space-y-6">
-      <div className="max-w-md mx-auto">
+      <div className="max-w-md mx-auto invisible">
         <Input
           type="text"
           placeholder="Search games..."
