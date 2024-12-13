@@ -1,5 +1,5 @@
 import { AboutPopupComponent } from './about-popup'
-import GameShowcase from './app-components-game-showcase' // Adjusted to default import
+import GamesGrid from './games-grid'
 import Link from 'next/link'
 import { Linkedin } from 'lucide-react'
 import { Button } from './ui/button'
@@ -32,14 +32,14 @@ export default async function PageComponent() {
       </header>
 
       <main className="flex-grow container mx-auto px-4 py-8">
-        <p className="text-2xl mx-auto w-full text-center pb-6 font-medium">A collection of 2D low-fidelity web games<br /><span className='italic font-normal text-base text-gray-700'> Best experience on desktop-based browsers</span></p>
-        <GameShowcase />
+        <p className="text-2xl mx-auto w-full text-center pb-6 font-medium">A collection of low-fidelity 2D web games<br /><span className='italic font-normal text-base text-gray-700'> Best experience on desktop-based browsers</span></p>
+        <GamesGrid />
       </main>
 
       <footer className="border-t">
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p>&copy; {new Date().getFullYear()} 2D - Low Fidelity Games. All rights reserved.</p>
+            <p>{new Date().getFullYear()} 2D - Low Fidelity Games.</p>
           </div>
         </div>
       </footer>
