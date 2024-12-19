@@ -1,12 +1,18 @@
 import { AboutPopupComponent } from './about-popup'
 import GamesGrid from './games-grid'
 import Link from 'next/link'
-import { Linkedin } from 'lucide-react'
+import { Linkedin, AlertTriangle } from 'lucide-react'
 import { Button } from './ui/button'
 import { FaXTwitter } from "react-icons/fa6";
+
 export default async function PageComponent() {
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground">
+      <div className="md:hidden sticky top-0 z-50 bg-yellow-100 text-yellow-800 px-4 py-3 flex items-center justify-center text-sm">
+        <AlertTriangle className="w-4 h-4 mr-2 flex-shrink-0" />
+        <p>Games can only be played on laptops or desktop computers with keyboard controls.</p>
+      </div>
+
       <header className="border-b">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <Link href="/" className="text-2xl font-semibold">LFG</Link>
