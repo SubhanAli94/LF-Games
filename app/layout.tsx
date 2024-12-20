@@ -1,16 +1,14 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Fredoka } from 'next/font/google'
+import { Lora } from 'next/font/google'
 
-const fredoka = Fredoka({
+const lora = Lora({
   subsets: ['latin'],
   display: 'swap',
 })
 
-
-
 export const metadata: Metadata = {
-  title: "LFG",
+  title: "LF Games",
   description: "A collection of 2D low-fidelity games.",
 };
 
@@ -21,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={fredoka.className}>
+      <body className={`${lora.className} letter-spacing`}>
         {children}
       </body>
     </html>

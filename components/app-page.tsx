@@ -13,9 +13,13 @@ export default async function PageComponent() {
         <p>Games can only be played on laptops or desktop computers with keyboard controls.</p>
       </div>
 
-      <header className="border-b">
+      <header>
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <Link href="/" className="text-2xl font-semibold">LFG</Link>
+
+
+          <Link href="/" className="text-2xl font-semibold">
+            LF Games
+          </Link>
           <nav className="flex items-center space-x-4 invisible">
             <ul className="flex space-x-4">
               <li><AboutPopupComponent /></li>
@@ -37,8 +41,9 @@ export default async function PageComponent() {
         </div>
       </header>
 
-      <main className="flex-grow container mx-auto px-4 py-8">
-        <p className="text-2xl mx-auto w-full text-center pb-6 font-medium">A collection of low-fidelity 2D web games<br /><span className='italic font-normal text-base text-gray-700'> Best experience on desktop-based browsers</span></p>
+      <main className="flex-grow container mx-auto px-4 pb-8 pt-5">
+        <p className="text-3xl mx-auto w-full text-center pb-2 font-medium gradient-text">A collection of low-fidelity 2D web games</p>
+        <p className='text-center font-normal text-base pb-6 text-gray-700'> Best experience on desktop-based browsers</p>
         <GamesGrid />
       </main>
 

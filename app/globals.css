@@ -8,6 +8,18 @@ body {
   font-family: 'fredoka', sans-serif;
 }
 
+.letter-spacing {
+  letter-spacing: 0.03em; /* Adjust the value as needed */
+}
+
+/* app/globals.css */
+.gradient-text {
+  background: linear-gradient(90deg, #ff007f, #7f00ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
