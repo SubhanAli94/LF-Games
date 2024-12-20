@@ -42,8 +42,8 @@ export default async function PageComponent() {
       </header>
 
       <main className="flex-grow container mx-auto px-4 pb-8 pt-5">
-        <p className="text-base md:text-3xl sm:text-sm mx-auto w-full text-center pb-2 font-medium gradient-text">A collection of low-fidelity 2D web games</p>
-        <p className='text-center font-normal text-base pb-6 text-gray-700'> Best experience on desktop-based browsers</p>
+        <p className="text-base md:text-3xl sm:text-2xl mx-auto w-full text-center pb-2 font-medium gradient-text">A collection of low-fidelity 2D web games</p>
+        <p className='text-center font-normal text-base md:pb-6 sm:pb-3 text-gray-700'> Best experience on desktop-based browsers</p>
         <GamesGrid />
       </main>
 
